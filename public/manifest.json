@@ -1,0 +1,26 @@
+{
+  "name": "TOEIC学習アプリ",
+  "short_name": "TOEIC学習",
+  "description": "TOEIC対策のための総合学習アプリ。Part5・Part6演習、単語フラッシュカード、分析機能搭載。",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "lang": "ja"
+}

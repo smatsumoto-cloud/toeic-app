@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bottom-nav-height: 64px;
+}
+
+body {
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+/* Safe area for iOS notch / home indicator */
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
