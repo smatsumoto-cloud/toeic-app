@@ -129,12 +129,15 @@ export default function Part6Page() {
     } else if (isLastQuestion) {
       setPassageIndex((p) => p + 1);
       setQuestionIndex(0);
+      setSelected(null);
+      setPhase("quiz");
+      setActiveTab("explanation");
     } else {
       setQuestionIndex((q) => q + 1);
+      setSelected(null);
+      setPhase("quiz");
+      setActiveTab("explanation");
     }
-    setSelected(null);
-    setPhase("quiz");
-    setActiveTab("explanation");
   }, [questionIndex, passageIndex, passage.questions.length]);
 
   // ===== サマリー =====
