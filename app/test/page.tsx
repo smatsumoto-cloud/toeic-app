@@ -7,7 +7,7 @@ import { getQuizResults, type QuizResult } from "@/lib/storage";
 const parts = [
   { id: 5, name: "Part 5", desc: "短文穴埋め問題", questions: 20, color: "blue", href: "/test/part5", available: true, note: "40問からランダム出題" },
   { id: 6, name: "Part 6", desc: "長文穴埋め問題", questions: 16, color: "green", href: "/test/part6", available: true, note: "" },
-  { id: 7, name: "Part 7", desc: "読解問題", questions: 54, color: "purple", href: "/test/part7", available: false, note: "" },
+  { id: 7, name: "Part 7", desc: "読解問題", questions: 15, color: "purple", href: "/test/part7", available: true, note: "5パッセージ×3問" },
 ];
 
 const colorMap: Record<string, string> = {
@@ -97,7 +97,7 @@ export default function TestPage() {
                 <div className="text-xs text-gray-400 w-12">{formatDate(result.date)}</div>
                 <div className="flex-1">
                   <div className="text-sm font-medium text-gray-700">
-                    {result.part === "part5" ? "Part 5" : "Part 6"}
+                    {result.part === "part5" ? "Part 5" : result.part === "part6" ? "Part 6" : "Part 7"}
                   </div>
                   <div className="bg-gray-100 rounded-full h-1.5 mt-1">
                     <div

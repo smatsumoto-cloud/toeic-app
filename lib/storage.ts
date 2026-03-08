@@ -7,7 +7,7 @@ export type WordStatus = "new" | "learning" | "known";
 export interface QuizResult {
   id: string;
   date: string; // YYYY-MM-DD
-  part: "part5" | "part6";
+  part: "part5" | "part6" | "part7";
   correct: number;
   total: number;
   timeSeconds: number;
